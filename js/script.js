@@ -3,8 +3,8 @@
 
 //Задание 1
 
-let money = 700;   //“Доход за месяц”
-money = prompt("Ваш месячный доход?");
+// let money = 700;   //“Доход за месяц”
+let money = +prompt('Ваш месячный доход?');
 // console.log(money + " $" + " Доход за месяц");
 console.log(typeof money);
 
@@ -15,9 +15,9 @@ console.log(typeof money);
 
 
 
-let income ='Курьер';       //строка с дополнительными доходом(например: фриланс),
-console.log(income + ' Подработка');
-console.log(typeof income);
+// let income ='Курьер';       //строка с дополнительными доходом(например: фриланс),
+// console.log(income + ' Подработка');
+// console.log(typeof income);
 
 
 
@@ -26,9 +26,11 @@ console.log(typeof income);
 let addExpenses = 'Такси, Проживание, Питание, Канцелярские предметы '; //строка с перечислением дополнительных расходов через запятую(например: интернет, такси, коммуналка)
 		addExpenses = prompt("Перечислите возможные расходы за рассчитываемый период через запятую");
 console.log(typeof addExpenses);
-let changeExpenses = addExpenses;
-console.log( changeExpenses.toLowerCase());
-console.log(addExpenses.split(', '));
+// console.log(addExpenses.length);
+
+// let changeExpenses = addExpenses;
+// console.log( changeExpenses.toLowerCase());
+// console.log(addExpenses.split(', '));
 
 
 
@@ -47,8 +49,7 @@ let mission = 50000 ; //любое число(Какую сумму хотите
 
 
 let period = 5;//число от 1 до 12(месяцев)
-
-console.log( mission + ' евро, за ' + period  + ' месяцев');
+// console.log( mission + ' евро, за ' + period  + ' месяцев');
 
 
 
@@ -65,7 +66,6 @@ console.log(expenses2);
 
 
 
-
 let amount1 = +prompt('Во сколько это обойдется?');
 let amount2 = +prompt('Во сколько это обойдется?');
 console.log(amount1 + " Рублей", amount2 + " Рублей");
@@ -73,18 +73,18 @@ console.log(amount1 + " Рублей", amount2 + " Рублей");
 
 // Task-6
 
-let budgetMonth = +prompt('Какая сумма у вас выходит в бюджете?');
-console.log(budgetMonth);
+let budgetMonth = 1600 ;
+console.log("Бюджет" + budgetMonth );
 
 
 // Task-7
-console.log('Цель будет достигнута за ' + Math.ceil(mission/budgetMonth) + " $");
+console.log('Цель будет достигнута за ' + Math.ceil(mission/budgetMonth) + "  месяцев(ца)");
 
 
 // Task-8
 let budgetDay = money / 30;
-console.log(budgetDay + " $");
-console.log('Цель за день' + Math.floor(budgetDay) + ' $');
+// console.log(budgetDay + " $");
+console.log('Цель за день ' + Math.floor(budgetDay) + ' $');
 
 
 // Task-9
